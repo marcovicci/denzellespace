@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
-body a {
+body a, #business, #pleasure {
     font-family: 'Righteous', sans-serif;
     color: white;
-    font-size: 3vw;
     text-decoration: underline;
     background-color: black;
+    text-align: center;
 }
 
-body a:hover {
+#business, #pleasure {
+    font-size: 3vw;
+    margin-top:10%
+}
+
+body a {
+    font-size: 2vw;
+    margin-bottom:-2vw;
+}
+
+body a:hover, #business:hover, #pleasure:hover {
     color: #2faced;
 }
 
 #logo {
     max-width: 90%;
-    margin-left: 30%;
-    margin-right: 30%;
     margin-top:1%;
-    margin-bottom:1%;
 }
 
-.vid {
-    margin-left: 30%;
-    margin-right: 30%;
+.vid, .fun {
     text-align: center;
+}
+
+.main {
+    margin-top:3vw;
 }
