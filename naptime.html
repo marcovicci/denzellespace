@@ -107,17 +107,19 @@ All you can do is head home to [[make dinner]].</tw-passagedata><tw-passagedata 
 
 You&#39;ve almost made it. Just need to [[brush your teeth|brush teeth]] and you can go to bed.</tw-passagedata><tw-passagedata pid="23" name="are you kidding me" tags="" position="828,587" size="100,100">Are you fucking kidding me? You want to go back to sleep again? Hit the back button. You absolute animal.
 
-I said, [[take a FUCKING nap]] </tw-passagedata><tw-passagedata pid="24" name="take a FUCKING nap" tags="" position="1278,570" size="100,100">You take a nap.
+I said, [[take a FUCKING nap]] </tw-passagedata><tw-passagedata pid="24" name="take a FUCKING nap" tags="" position="1239,583" size="100,100">You take a nap.
 
-You awake surrounded by the rubble of human civilization. Eons have passed. The world around you is overgrown, bereft of intelligent life. Stray dogs ten-generations removed roam the streets, more like wolves than anything. You missed all your classes. You missed everything. No one has ever napped like you have. You are Napodemus, Pharisee of Naps. You are Napdab, second king of ancient zzz-rael. You are Jesus Fucking Christ I&#39;m Having Yet Another Nap, the leader of the twelve Napostles. Great job, genius.
+You awake surrounded by the rubble of human civilization. Eons have passed. The world around you is overgrown, bereft of intelligent life. Stray dogs ten-generations removed roam the streets, more like wolves than anything. You missed all your classes. You missed everything. No one has ever napped like you have. You&#39;re like a martyr for the cause of going the hell to sleep. You are Napdab, second king of ancient zzz-rael. You are Jesus Fucking Christ I&#39;m Having Yet Another Nap, the leader of the twelve Napostles. 
 
-You decide to take another nap.
+Great job, genius. Might as well take another nap.
 
-Dental score: (if: $brushed is true)[squeaky clean](if: $brushed is false and $coffee is 0)[a little scuzzy, but you&#39;ll live](if: $brushed is false and $coffee is 1)[getting kinda gross, dude](if: $brushed is false and $coffee is 2)[absolutely disgusting. you really should have brushed your teeth. you animal]
+Dental score: (if: $brushed is true)[Squeaky clean](if: $brushed is false and $coffee is 0)[A little scuzzy, but you&#39;ll live](if: $brushed is false and $coffee is 1)[Getting kinda gross, dude](if: $brushed is false and $coffee is 2)[Absolutely disgusting. you really should have brushed your teeth]. You drank $coffee cup(s) of coffee.
 
-Hunger score: (if: $meals is 2)[totally fine](if: $meals is 1)[you still feel a little hungry](if: $meals is 0)[you&#39;re so hungry you can barely sleep]
+Hunger score: (if: $meals is 2)[Totally fine.](if: $meals is 1)[You still feel a little hungry.](if: $meals is 0)[You&#39;re so hungry you can barely sleep.] You ate $meals meal(s).
 
-Anxiety score: (if: $anxiety is 0)[you feel good about your accomplishments today](if: $anxiety is 1)[you&#39;re a little anxious about your missed class](if: $anxiety is 2)[you&#39;re very nervous that you missed two classes](if: $anxiety is 3)[you are so anxious you&#39;ve crossed the other side into some sort of Nirvana state]</tw-passagedata><tw-passagedata pid="25" name="let out" tags="" position="1159,475" size="100,100">(set: $tired to it + 1)You manage to get let out and go home. It&#39;s much too late for dinner, but you can brush your teeth and go to bed.
+Anxiety score: Normally, this would have been influenced by your number of missed classes. But the world ended, so in a way, you&#39;re more at peace than ever. 
+
+In total, you did $tired exhausting tasks today. Hope that doesn&#39;t bite you in the butt tomorrow! (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]</tw-passagedata><tw-passagedata pid="25" name="let out" tags="" position="1159,475" size="100,100">(set: $tired to it + 1)You manage to get let out and go home. It&#39;s much too late for dinner, but you can brush your teeth and go to bed.
 
 [[I guess let&#39;s do that.|brush teeth]] </tw-passagedata><tw-passagedata pid="26" name="coffee will help" tags="" position="604,11" size="100,100">(set: $coffee to it + 1) (set: $meals to it + 1)God, you&#39;re so right. God, you&#39;re so fucking smart. Coffee good.
 [[Time for your second class.|class 2]] </tw-passagedata><tw-passagedata pid="27" name="brushed" tags="" position="1209,116" size="100,100">(set: $brushed to true)(set: $tired to it + 1)Your mouth no longer feels hairy. Sleep is your reward.
