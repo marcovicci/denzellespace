@@ -73,7 +73,9 @@ Hunger score: (if: $meals is 2)[Totally fine.](if: $meals is 1)[You still feel a
 
 Anxiety score: (if: $anxiety is 0)[You feel good about your accomplishments today](if: $anxiety is 1)[You&#39;re a little anxious about your missed class](if: $anxiety is 2)[You&#39;re very nervous and feel like you have a lot of catching up to do.](if: $anxiety is 3)[You are so anxious you&#39;ve crossed the other side into some sort of Nirvana state]. You missed $anxiety of your three classes.
 
-In total, you did $tired exhausting tasks today. Hope that doesn&#39;t bite you in the butt tomorrow! (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]</tw-passagedata><tw-passagedata pid="13" name="sleep in" tags="" position="1,592" size="100,100">You drastically oversleep. It&#39;s already lunchtime when you wake up. That doesn&#39;t feel great.
+In total, you did $tired exhausting tasks today. Hope that doesn&#39;t bite you in the butt tomorrow! (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]
+
+(link:&quot;Play again?&quot;)[(gotoURL:&quot;naptime.html&quot;)]</tw-passagedata><tw-passagedata pid="13" name="sleep in" tags="" position="1,592" size="100,100">You drastically oversleep. It&#39;s already lunchtime when you wake up. That doesn&#39;t feel great.
 
 [[lunch at home]]</tw-passagedata><tw-passagedata pid="14" name="lunch at home" tags="" position="486,592" size="100,100">(set: $meals to it + 1)(set: $anxiety to it + 1)
 You have lunch. You still have enough time to make it to your second class. Missing the first one won&#39;t hurt too bad.
@@ -113,13 +115,16 @@ You awake surrounded by the rubble of human civilization. Eons have passed. The 
 
 Great job, genius. Might as well take another nap.
 
-Dental score: (if: $brushed is true)[Squeaky clean](if: $brushed is false and $coffee is 0)[A little scuzzy, but you&#39;ll live](if: $brushed is false and $coffee is 1)[Getting kinda gross, dude](if: $brushed is false and $coffee is 2)[Absolutely disgusting. you really should have brushed your teeth]. You drank $coffee cup(s) of coffee.
+Dental score: (if: $brushed is true)[Squeaky clean](if: $brushed is false and $coffee is 0)[A little scuzzy, but you&#39;ll live](if: $brushed is false and $coffee is 1)[Getting kinda gross, dude](if: $brushed is false and $coffee is 2)[Absolutely disgusting. You really should have brushed your teeth]. You drank $coffee cup(s) of coffee.
 
 Hunger score: (if: $meals is 2)[Totally fine.](if: $meals is 1)[You still feel a little hungry.](if: $meals is 0)[You&#39;re so hungry you can barely sleep.] You ate $meals meal(s).
 
 Anxiety score: Normally, this would have been influenced by your number of missed classes. But the world ended, so in a way, you&#39;re more at peace than ever. 
 
-In total, you did $tired exhausting tasks today. Hope that doesn&#39;t bite you in the butt tomorrow! (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]</tw-passagedata><tw-passagedata pid="25" name="let out" tags="" position="1159,475" size="100,100">(set: $tired to it + 1)You manage to get let out and go home. It&#39;s much too late for dinner, but you can brush your teeth and go to bed.
+In total, you did $tired exhausting tasks today. If you&#39;re not worried about tomorrow anymore, I guess that doesn&#39;t matter at all. (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]
+
+(link:&quot;Play again?&quot;)[(gotoURL:&quot;naptime.html&quot;)]
+</tw-passagedata><tw-passagedata pid="25" name="let out" tags="" position="1159,475" size="100,100">(set: $tired to it + 1)You manage to get let out and go home. It&#39;s much too late for dinner, but you can brush your teeth and go to bed.
 
 [[I guess let&#39;s do that.|brush teeth]] </tw-passagedata><tw-passagedata pid="26" name="coffee will help" tags="" position="604,11" size="100,100">(set: $coffee to it + 1) (set: $meals to it + 1)God, you&#39;re so right. God, you&#39;re so fucking smart. Coffee good.
 [[Time for your second class.|class 2]] </tw-passagedata><tw-passagedata pid="27" name="brushed" tags="" position="1209,116" size="100,100">(set: $brushed to true)(set: $tired to it + 1)Your mouth no longer feels hairy. Sleep is your reward.
