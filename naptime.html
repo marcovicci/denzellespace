@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="take a nap" startnode="1" creator="Twine" creator-version="2.3.5" ifid="1BBD0D76-6779-4A77-9B9F-EE9981A763EA" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="2,1" size="100,100">It&#39;s time to wake up. You&#39;re still a little tired. Really, you want to take a nap.(set: $brushed to false)(set: $coffee to 0) (set: $meals to 0)(set: $anxiety to 0)
+<tw-storydata name="take a nap" startnode="1" creator="Twine" creator-version="2.3.5" ifid="1BBD0D76-6779-4A77-9B9F-EE9981A763EA" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="2,1" size="100,100">It&#39;s time to wake up. You&#39;re still a little tired. Really, you want to take a nap.(set: $brushed to false)(set: $coffee to 0)(set: $meals to 0)(set: $anxiety to 0)(set: $dishes to false)(set: $tired to 0)
 
 You have some very normal tasks to accomplish today: have your coffee, eat at least a couple of meals, make it through three classes and hopefully be well rested for tomorrow (ha ha). Let&#39;s get started.
 
@@ -75,7 +75,7 @@ Anxiety score: (if: $anxiety is 0)[You feel good about your accomplishments toda
 
 In total, you did $tired exhausting tasks today. Hope that doesn&#39;t bite you in the butt tomorrow! (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]
 
-(link:&quot;Play again?&quot;)[(gotoURL:&quot;naptime.html&quot;)]</tw-passagedata><tw-passagedata pid="13" name="sleep in" tags="" position="1,592" size="100,100">You drastically oversleep. It&#39;s already lunchtime when you wake up. That doesn&#39;t feel great.
+[[Play again?|start]]</tw-passagedata><tw-passagedata pid="13" name="sleep in" tags="" position="1,592" size="100,100">You drastically oversleep. It&#39;s already lunchtime when you wake up. That doesn&#39;t feel great.
 
 [[lunch at home]]</tw-passagedata><tw-passagedata pid="14" name="lunch at home" tags="" position="486,592" size="100,100">(set: $meals to it + 1)(set: $anxiety to it + 1)
 You have lunch. You still have enough time to make it to your second class. Missing the first one won&#39;t hurt too bad.
@@ -123,7 +123,7 @@ Anxiety score: Normally, this would have been influenced by your number of misse
 
 In total, you did $tired exhausting tasks today. If you&#39;re not worried about tomorrow anymore, I guess that doesn&#39;t matter at all. (if: $dishes is false)[Also, you left a sink full of dirty dishes for yourself. You monster.]
 
-(link:&quot;Play again?&quot;)[(gotoURL:&quot;naptime.html&quot;)]
+[[Play again?|start]]
 </tw-passagedata><tw-passagedata pid="25" name="let out" tags="" position="1159,475" size="100,100">(set: $tired to it + 1)You manage to get let out and go home. It&#39;s much too late for dinner, but you can brush your teeth and go to bed.
 
 [[I guess let&#39;s do that.|brush teeth]] </tw-passagedata><tw-passagedata pid="26" name="coffee will help" tags="" position="604,11" size="100,100">(set: $coffee to it + 1) (set: $meals to it + 1)God, you&#39;re so right. God, you&#39;re so fucking smart. Coffee good.
