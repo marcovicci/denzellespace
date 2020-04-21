@@ -1,36 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
-body a, #business, #pleasure {
-    font-family: 'Righteous', sans-serif;
-    color: white;
-    text-decoration: underline;
-    background-color: black;
-    text-align: center;
+@font-face {
+    font-family: "Noto Sans Regular";
+    src: url(NotoSans-Regular.ttf);
 }
 
-#business, #pleasure {
-    font-size: 3vw;
-    margin-top:10%
+@font-face {
+    font-family: "Noto Sans Bold";
+    src: url(NotoSans-Bold.ttf);
 }
 
-body a {
-    font-size: 2vw;
-    margin-bottom:-2vw;
-}
-
-body a:hover, #business:hover, #pleasure:hover {
-    color: #2faced;
-}
-
-#logo {
-    max-width: 90%;
-    margin-top:1%;
-}
-
-.vid, .fun {
-    text-align: center;
+@font-face {
+    font-family: "Noto Sans Thin";
+    src: url(NotoSans-Thin.ttf);
 }
 
 .main {
-    margin-top:3vw;
+   background-color: white;
+   height: 100%;
+}
+
+.bio {
+    padding-top: 15vw;
+}
+
+.bio .col {
+    text-align: center;
+}
+
+.bio img {
+    border-radius: 50%;
+}
+
+.navblock {
+    text-align: right;
+    padding-right: 1vw;
+    padding-top: 0.7vw;
+    color: #fff;
+    letter-spacing: 0.15vw;
+    font-size: 1.5vw;
+    font-family: "Noto Sans Thin"; 
+    position:absolute;
+    top: 1.5vw;
+    right: 54% !important;
+    width: 47%;
+    background-color:#2faced;
+    height: 4.5vw;
+    border-bottom: #FFB400 0.7vw solid;
+}
+
+.navblock a {
+    color:#fff;
+}
+
+.navblock a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navblock b {
+    font-weight: bold;
+}
+
+.bio {
+    
+}
+
+.footer {
+    font-size: 0.9vw;
+    font-family: "Noto Sans Regular";
+    color: #fff;
+    position: absolute;
+    border-top: #2faced 0.7vw solid;
+    height: 4.5vw;
+    width: 47%;
+    bottom:1.5vw !important;
+    right: 0px !important;
+    text-align: right;
+    background-color: #FFB400;
+    padding-right: 20%;
+    padding-top: 0.4%;
+    letter-spacing: 0.1vw;
+}
+
+.footer b {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    font-weight: normal;
+    font-family: "Righteous";
+    letter-spacing: 0.2vw;
+}
+
+body {
+    background-image:url(bg-cool.png) !important; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
 }
