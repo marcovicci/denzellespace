@@ -123,3 +123,46 @@ body {
 html, body {
     height: 100%;
 }
+
+.portfolio {
+    padding-top: 15%;
+}
+
+ .video-wrap {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    /* video poster frame or placeholder image */
+    .video-wrap .placeholder {
+      max-width: 500px;
+      width: 100%;
+    }
+    /* SVG play button container */
+    .video-wrap .play-btn {
+      position: absolute;
+      max-width: 500px;
+      width: 100px;
+      height: 100px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-70%, -50%);
+    z-index: 1;
+    }
+    .video-wrap .play-btn svg {
+      transition: all .2s ease;
+      fill: #FFB400;
+    }
+    .video-wrap .play-btn:hover svg,
+    .video-wrap .play-btn:focus svg {
+      cursor: pointer;
+      fill: #FFF;
+    }
+    /* adjust your icon size, add different breakpoints as needed */
+    @media screen and (max-width: 600px) {
+      .video-wrap .play-btn {
+        width: 70px;
+        height: 70px;
+      }
+    }
