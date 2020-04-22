@@ -19,17 +19,21 @@
    height: 100%;
 }
 
-.bio {
+.bio, .contact {
     padding-top: 15vw;
 }
 
-.bio .col {
+.bio .col, .contact col {
     text-align: center;
 
 }
 
 .bio img {
     border-radius: 50%;
+}
+
+.contact img {
+    max-width: 600px;
 }
 
 .navblock {
@@ -62,7 +66,7 @@
     font-weight: bold;
 }
 
-.bio {
+.bio, .contact {
     font-size: 0.9vw;
     letter-spacing: 0.07vw;
     color:#000;
