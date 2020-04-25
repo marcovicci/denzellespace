@@ -15,7 +15,7 @@
 }
 
 .main {
-   background-color: white;
+   background-color: #FFF;
    height: 100%;
 }
 
@@ -170,3 +170,9 @@ html, body {
         height: 70px;
       }
     }
+
+.blog {
+    height: 100%;
+    width: inherit;
+    padding-top: 7vw;
+}
