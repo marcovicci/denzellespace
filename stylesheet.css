@@ -181,3 +181,8 @@ html, body {
     height: 100%;
     width: inherit;
 }
+
+.iframe-controls-container, .iframe-controls-container--unified, .iframe-controls-container--overlay, .iframe-controls-container--denzelle
+{
+    display:none;
+}
