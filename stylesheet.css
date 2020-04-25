@@ -171,8 +171,13 @@ html, body {
       }
     }
 
+.blogcontainer {
+    height: inherit;
+    width:inherit;
+    overflow: hidden;
+}
+
 .blog {
     height: 100%;
     width: inherit;
-    padding-top: 7vw;
 }
