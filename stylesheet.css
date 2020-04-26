@@ -180,6 +180,10 @@ html, body {
       margin-bottom: 10px;
     }
 
+.portrait {
+    margin-top: 8vw;
+}
+
 .textbio .video-wrap {
     margin-left: 45px;
       max-width: 445px;
